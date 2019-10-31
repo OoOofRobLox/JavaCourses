@@ -11,7 +11,7 @@ class Lesson2 {
      * хвост отбрасываем без откругления
      */
     static int formula(int x) {
-        return (int) Math.sqrt(13*x + 13/x);
+        return (int) Math.sqrt(13 * x + 13 / x);
     }
 
     /**
@@ -28,11 +28,7 @@ class Lesson2 {
      */
     static String initials(String fullName) {
         String[] strArr = fullName.split(" ");
-        String str = "";
-        for (int i = 0; i < strArr.length; i++){
-            str += strArr[i].toUpperCase().charAt(0) + ".";
-        }
-        return str;
+        return (strArr[0].charAt(0) + "." + strArr[1].charAt(0) + "." + strArr[2].charAt(0) + ".").toUpperCase();
     }
 
 }
