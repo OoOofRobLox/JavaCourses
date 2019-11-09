@@ -23,7 +23,7 @@ public class Lesson3_Operators {
         } else if (i < 0) {
             str = i + str;
         } else {
-            str = String.valueOf(i);
+            str = "0";
         }
         return str.length() <= 10 ? str : str.substring(0,10);
     }
@@ -46,8 +46,8 @@ public class Lesson3_Operators {
         if (i > 100 || i < 30) {
             i += 1000;
         } else if (i > 0 && i % 2 == 0) {
-            i -= 100;
+            i -= 1000;
         }
-        return i < 0 ? false : true;
+        return i >= 0;
     }
 }
